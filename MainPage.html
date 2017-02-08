@@ -3,21 +3,24 @@
 <head>
 	<title>首页</title>
 	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" /> 
 	<link type="text/css" rel="stylesheet" href="css/MainPage.css" />
+	<script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=jjCudUsPhl0ngj5ZQ6nVuFMvYQL4yYXo"></script> 
+	<script type="text/javascript" src="http://developer.baidu.com/map/jsdemo/demo/convertor.js"></script>
+	<script type="text/javascript" src="js/map.js"></script>
 </head>
 <body>
     <div id="container">
-    	<div class="header">
-    	    <img src="image/discover_icon_loc.png" class="icon-header" />
-    	    <div class="area">
-    	    敏捷春天花园
-    	    </div>
+    	<div id="map">
     	</div>
-    	<div id="content">
+    	<div class="header">
+    	    <img src="image/discover_icon_loc.png" id="icon-header" />
+    	    <div id="area">
+    	    </div>
     	</div>
     	<div id="footer">
     	    <div id="left" class="bottom">
-    	        <img src="image/Location.png"  class="icon"/><br />
+    	        <img src="image/Location_pressed.png"  class="icon"/><br />
     	        发现
     	    </div>
     	    <div id="center" class="bottom">

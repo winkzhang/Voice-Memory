@@ -8,22 +8,30 @@ html, body {
 	width: 100%;
 }
 .header {
-	height: 15%;
+	position: fixed;
+	top: 0;
+	left: 0;
+	height: 14%;
 	width: 100%;
 	background-color: #2dd7e2;
-	display: table;
 }
-#content {
-	height: 75%;
+#map {
+	height: 100%;
+	margin-left: -10px;
 }
 #footer {
+	background-color: white;
+	position: fixed;
+	left: 0;
+	bottom: 0;
 	height: 10%;
+	width: 100%;
 }
 
 .bottom {
 	height: 100%;
 	text-align: center;
-	font-size: 30px;
+	font-size: 8px;
 	color: #888888;
 }
 #left {
@@ -39,33 +47,31 @@ html, body {
 	float: left;
 }
 
-.icon-header {
-	width: 50px;
-	height: 80px;
-	/*margin-top: 110px;*/
-	/*margin-left: 300px;*/
-	padding-top: 110px;
-	padding-left: 200px;
+#icon-header {
+	width: 20px;
+	height: 30px;
+	/*margin-top: 40px;
+	margin-left: 70px;*/
+	padding-top: 8%;
+	padding-left: 20%;
 	float: left;
 }
 
-.area {
-    width: 686px;
-    height: 83px;
-    margin-left: 25px;
-    margin-top: 110px;
-    font-size: 50px;
+#area {
+    width: 250px;
+    height: 30px;
+    padding-left: 30%;
+    padding-top: 8%;
+    font-size: 25px;
     /*vertical-align: middle;*/
     /*div没有vertical属性*/
-    float: left;
     /*设置文字垂直居中*/
-    line-height: 83px;
+    line-height: 30px;
     color: #fcfcfc;
 }
 
 .icon {
 	width: 16%;
 	height: 50%;
-	padding-top: 20px;
-	padding-bottom: 5px;
+	padding-top: 10px;
 }
