@@ -253,7 +253,7 @@ html, body {
 	position: fixed;
     bottom: 0;
     left: 0;
-	height: 120px;
+	height: 150px;
 	width: 100%;
 	font-size: 16px;
 	font-family: "黑体";
@@ -264,17 +264,17 @@ html, body {
 .next {
 	color: #2dd7e2;
 	width: 100%;
-	height: 40px;
-	line-height: 40px;
+	height: 50px;
+	line-height: 50px;
 	text-align: center;
 	border-bottom-color: #f0f1f1;
 	border-bottom-width: 1px;
 	border-bottom-style: solid;
 }
-.cancel {
+#cancel {
 	color: #999999;
 	width: 100%;
-	height: 40px;
-	line-height: 40px;
+	height: 50px;
+	line-height: 50px;
 	text-align: center;
 }

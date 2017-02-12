@@ -12,6 +12,20 @@ geolocation.getCurrentPosition(function(result) {
     BMap.Convertor.translate(gpsPoint, 0, initMap);
 });
 
+// 当触摸气泡时，跳转到地区留声页
+function touches(ev) {
+    if (ev.touches.length == 1) {
+		switch(ev.type) {
+			case 'touchstart':
+				window.location.href="AreaSound.html";
+				break;
+			case 'touchend':
+				window.location.href="AreaSound.html";
+				break;
+		}
+	}
+}
+
 
 
 // 定义自定义覆盖物的构造函数
@@ -81,6 +95,8 @@ BubbleOverlay.prototype.draw = function() {
 	var position = this._map.pointToOverlayPixel(this._center);
 	this._img.style.left = position.x - this._length/2 + "px";
 	this._img.style.top = position.y - this._length/2 + "px";
+	// 添加触摸监听事件，draw函数把气泡放到当前正确位置，所以在此处才有效
+	this._img.addEventListener('touchstart', touches, false);
 }
 
 // 定义自定义覆盖物的构造函数
@@ -123,6 +139,7 @@ Bubble2Overlay.prototype.draw = function() {
 	var position = this._map.pointToOverlayPixel(this._center);
 	this._div.style.left = position.x - this._length/2 + "px";
 	this._div.style.top = position.y - this._length/2 + "px";
+	this._img.addEventListener('touchstart', touches, false);
 }
 
 // 定义自定义覆盖物的构造函数
@@ -157,6 +174,7 @@ Bubble3Overlay.prototype.draw = function() {
 	var position = this._map.pointToOverlayPixel(this._center);
 	this._img.style.left = position.x - this._length/2 + "px";
 	this._img.style.top = position.y - this._length/2 + "px";
+	this._img.addEventListener('touchstart', touches, false);
 }
 
 // 定义自定义覆盖物的构造函数
@@ -191,6 +209,7 @@ Bubble4Overlay.prototype.draw = function() {
 	var position = this._map.pointToOverlayPixel(this._center);
 	this._img.style.left = position.x - this._length/2 + "px";
 	this._img.style.top = position.y - this._length/2 + "px";
+	this._img.addEventListener('touchstart', touches, false);
 }
 
 
@@ -247,4 +266,7 @@ function initMap(point) {
     map.addOverlay(myBubble7);
     var myBubble8 = new Bubble4Overlay(point8, 65);
     map.addOverlay(myBubble8);
+
 }
+
+
