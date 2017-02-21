@@ -13,7 +13,7 @@ html, body {
 	top: 0;
 	left: 0;
 	/*height: 14%;*/
-	height: 70px;
+	height: 60px;
 	width: 100%;
 	background-color: #2dd7e2;
 	z-index: 2;
@@ -22,14 +22,14 @@ html, body {
 	float: left;
 	/*height: 22px;*/
 	width: 25px;
-	padding-top: 35px;
+	padding-top: 25px;
 	padding-left: 16px;
 }
 #loc {
     float:left;
     height: 25px;
     line-height: 25px;
-    padding-top: 35px;
+    padding-top: 25px;
     padding-left: 16px;
     color: #fcfcfc;
     font-size: 22px;
@@ -38,9 +38,8 @@ html, body {
 	float: right;
 	height: 25px;
 	line-height: 25px;
-	padding-top: 35px;
+	padding-top: 25px;
 	padding-right: 16px;
-    color: #fcfcfc;
     font-size: 18px;
     color: #ffffff;
 }
@@ -48,7 +47,7 @@ html, body {
 #content {
 	background-color: #f0f1f1;
 	position: absolute;
-	top: 70px;
+	top: 60px;
 	left: 0px;
 	-webkit-overflow-scrolling: touch;
 	width: 100%;
@@ -107,7 +106,7 @@ html, body {
     text-align: center;
     font-size: 14px;
     color: #333333;
-    font-family: "黑体";
+    font-family: "Microsoft Yahei, SimSun, Helvetica";
     font-weight: bold;
     float: left;
 }
@@ -148,7 +147,7 @@ html, body {
     margin-left: auto;
     margin-right: auto;
     color: #666666;
-    font-family: "黑体";
+    font-family: "Microsoft Yahei, SimSun, Helvetica";
 }
 .picture {
 	width: 90%;
@@ -176,7 +175,7 @@ html, body {
 }
 .bottom_func {
 	font-size: 14px;
-	font-family: "黑体";
+	font-family: "Microsoft Yahei, SimSun, Helvetica";
 	color: #2dd7e2;
 	height: 100%;
 }
@@ -246,7 +245,7 @@ html, body {
 .icon {
 	/*width: 16%;*/
 	height: 50%;
-	padding-top: 10px;
+	padding-top: 8px;
 }
 
 #photo {
@@ -256,7 +255,7 @@ html, body {
 	height: 150px;
 	width: 100%;
 	font-size: 16px;
-	font-family: "黑体";
+	font-family: "Microsoft Yahei, SimSun, Helvetica";
 	z-index: 3;
 	background-color: white;
 	display: none;

@@ -9,6 +9,7 @@ $(document).ready(function() {
 			var z = document.getElementById('content');
 			switch(ev.type) {
 				case 'touchstart':
+				    // 记得加双引号
 				    x.style.display = "block";
 				    y.style.webkitFilter = "brightness(60%)";
                     y.style.filter = "brightness(60%)";
